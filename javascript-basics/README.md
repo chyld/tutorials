@@ -136,3 +136,20 @@ else
 ```
 
 Here, `undefined` is also considered `false`, just as `null`, `0`, `''` and `NaN`. This is zero, empty string and `Not a Number`.
+
+### All Together
+
+Time to put all this knowledge together to build a simple app. We will need a way to get user input. Do do this we'll use the `prompt` function. It will allow us to ask the user, or prompt them, for some information. We will use this information to make our program feel more alive.
+
+```js
+  var name = prompt('What is your name?');
+  var age = prompt('What is your age?');
+  age = parseInt(age);
+  
+  if(age < 21)
+    console.log('You are too young to drink alcohol');
+  else
+    console.log('You are legally permitted to drink');
+```
+
+I first prompt the user for their name. The result goes into the variable `name`. I then ask for their age. But if you were to look into the `age` variable, you would see that it is a `String` type, like "33". `prompt` always gives you a string. We need to convert this string to a number. We do this with the `parseInt` function. It takes a string and will give you a number. So now `age` has been converted from a `String` type to a `Number` type. Next we have an `if` condition. If the person's age is less than 21 then we print out the first string to the console. If it is greater than or equal to 21, then we display the second string.
