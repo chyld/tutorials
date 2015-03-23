@@ -106,3 +106,33 @@ A lot is going on here.
 I create two numbers, `a` and `b`. Then I create a variable `isAsmallerThanB` which is the result of the boolean expression `a < b`. This is asking a question, is `a` less than `b`. The result is either `true` or `false`. The next line is an `if` statement. If the expression in the `if` statement is true, then the first console.log gets executed. If it is false, then the statement below the `else` gets executed.
 
 Here, because `a` is less than `b`, the console will display `A is smaller than B`.
+
+#### Null
+
+`null` means the variable has no value associated with it. If you said `var a = null;`, then you are creating the `a` variable, but are assigning it nothing.
+
+```js
+var a = null;
+
+if(a)
+  console.log('a is truthy');
+else
+  console.log('a is falsy'); // => This one runs
+```
+
+Here, `null` is considered a `false` value in JavaScript. So, the bottom condition runs.
+
+#### Undefined
+
+`undefined` means you are trying to access a variable that has not yet been defined, or assigned a value.
+
+```js
+var a; // a is undefined
+
+if(a)
+  console.log('a is truthy');
+else
+  console.log('a is falsy'); // => This one runs
+```
+
+Here, `undefined` is also considered `false`, just as `null`, `0`, `''` and `NaN`. This is zero, empty string and `Not a Number`.
