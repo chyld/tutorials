@@ -40,6 +40,8 @@ In JavaScript there are 5 primitive types and 1 object type, for a total of 6 ty
 - Null
 - Undefined
 
+#### Number
+
 Let's discuss the `Number` type first.
 
 A number is either whole or fractional. We call these integers or floats (for floating point). Let's create some numbers using variables. The first time you use a variable you have to create it. You create a variable by using the `var` keyword. Like this.
@@ -71,3 +73,36 @@ console.log(sum) // => 5.4
 
 Above, I used //. This is a single line comment in JavaScript. Anything after this is ignored by the compiler. I'm showing the output of the console.log statement.
 
+#### String
+
+The `String` type is next. A `String` is basically a string of letters, numbers, symbols that not to be used for numerical calculations. Strings can be created in either single or double quotes. Additionally, you can concatinate one string onto another by using the `+` operator.
+
+```js
+var first = 'Bob';
+var last = "Jones";
+var fullName = first + ' ' + last;
+console.log('The fullName is', fullName); // => The fullName is Bob Jones
+```
+
+I first create `Bob` inside the `first` variable with single quotes. `Jones` is created using double quotes. Then fullName, which is camel cased, is the `first` concatinated with a space concatinated with `last`. Finally I log out to the console `The fullName is Bob Jones`.
+
+#### Boolean
+
+The `Boolean` type has a limited range. It can only be `true` or `false`. We use this type when we want to make a decision. Go left if something is true, else go right.
+
+```js
+var a = 3;
+var b = 20;
+var isAsmallerThanB = a < b;
+
+if(isAsmallerThanB)
+  console.log('A is smaller than B'); // => This one runs
+else
+  console.log('A is larger than B');
+```
+
+A lot is going on here.
+
+I create two numbers, `a` and `b`. Then I create a variable `isAsmallerThanB` which is the result of the boolean expression `a < b`. This is asking a question, is `a` less than `b`. The result is either `true` or `false`. The next line is an `if` statement. If the expression in the `if` statement is true, then the first console.log gets executed. If it is false, then the statement below the `else` gets executed.
+
+Here, because `a` is less than `b`, the console will display `A is smaller than B`.
