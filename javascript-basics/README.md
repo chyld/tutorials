@@ -153,3 +153,9 @@ Time to put all this knowledge together to build a simple app. We will need a wa
 ```
 
 I first prompt the user for their name. The result goes into the variable `name`. I then ask for their age. But if you were to look into the `age` variable, you would see that it is a `String` type, like "33". `prompt` always gives you a string. We need to convert this string to a number. We do this with the `parseInt` function. It takes a string and will give you a number. So now `age` has been converted from a `String` type to a `Number` type. Next we have an `if` condition. If the person's age is less than 21 then we print out the first string to the console. If it is greater than or equal to 21, then we display the second string.
+
+### Exploration
+
+Take what you have learned and try and build a simple calculator. Ask the user for a first number, a second number and then what type of operation they would like to perform. Maybe they would enter `+` for addition or `*` for multiplication.
+
+Display the results of the calculation to the user.
